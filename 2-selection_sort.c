@@ -2,8 +2,8 @@
 
 /**
  * swapped_ints - swap two integers in an array
- * @a: integer to be swapped
- * @b: integer to be swapped
+ * @x: integer to be swapped
+ * @z: integer to be swapped
  */
 
 void swapped_ints(int *x, int *z)
