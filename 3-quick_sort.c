@@ -15,6 +15,16 @@ void swapped_ints(int *x, int *z)
 	*z = temp;
 }
 
+/**
+ * lomuto_partition - performs lomuto partions to the array
+ * @array: array to be sorted
+ * @size: size of the array
+ * @left: left most element of the array
+ * @right: right most element of the array
+ *
+ * Return: index of the partition
+ */
+
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
 	int *pivot, above, below;
@@ -42,6 +52,14 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 	return (above);
 }
 
+/**
+ * lomuto_sort - performs quicksort using the lomuto partition
+ * @array: array to be sorted
+ * @size: size of the array
+ * @left: left most element of the array
+ * @right: right most element of the array
+ */
+
 void lomuto_sort(int *array, size_t size, int left, int right)
 {
 	int part;
@@ -53,6 +71,12 @@ void lomuto_sort(int *array, size_t size, int left, int right)
 		lomuto_sort(array, size, part + 1, right);
 	}
 }
+
+/**
+ * quick_sort - calls quicksort function
+ * @array: array to be sorted
+ * @size: size of the array
+ */
 
 void quick_sort(int *array, size_t size)
 {
