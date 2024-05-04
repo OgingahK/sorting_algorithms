@@ -15,6 +15,12 @@ void swapped_ints(int *x, int *z)
 	*z = temp;
 }
 
+/**
+ * selection_sort - sorts an array of integers in ascending order
+ * @array: sorted array
+ * @size: size of array
+ */
+
 void selection_sort(int *array, size_t size)
 {
 	int *minPtr;
